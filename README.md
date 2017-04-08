@@ -10,9 +10,15 @@ Clone: https://github.com/w4ndry/tryout-02<br>
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br>
+![sketch kasar](http://prnt.sc/etvnrd)
+<br>
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+<br>
+![sketch kasar](http://prnt.sc/etvo6g)
+
 
 ### `npm run build`
 
