@@ -14,7 +14,7 @@ export default class TodoApp extends Component {
   constructor(props){
     super(props);
     this.state = {
-      text: 'Your Todo'
+      text: ''
     }
   }
 
@@ -36,8 +36,9 @@ export default class TodoApp extends Component {
           <Text style={{color: 'white', fontSize: 15, fontWeight: 'bold'}}>Press to write</Text>
         </TouchableOpacity>
         <Text style={styles.instructions}>
-           {this.state.text}
+           Your todo
         </Text>
+        <Text style={{textAlign: 'left'}}>-{this.state.text}</Text>
       </View>
     );
   }
