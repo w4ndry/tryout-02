@@ -1,30 +1,42 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity,
+  NativeModules,
 } from 'react-native';
 
+const TodoModule = NativeModules.TodoApp;
+
 export default class TodoApp extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      text: 'Your Todo'
+    }
+  }
+
+  speechtotext(){
+    TodoModule.start()
+    .then(resp =>{
+      this.setState({ text: resp });
+    })
+    .catch(err => console.log('err', err))
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          My Todo
         </Text>
+        <TouchableOpacity style={styles.button} onPress={() => this.speechtotext()}>
+          <Text style={{color: 'white', fontSize: 15, fontWeight: 'bold'}}>Press to write</Text>
+        </TouchableOpacity>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+           {this.state.text}
         </Text>
       </View>
     );
@@ -43,9 +55,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
+  button: {
+    backgroundColor: 'skyblue',
+    padding: 10,
+    borderRadius: 3,
     marginBottom: 5,
   },
 });
