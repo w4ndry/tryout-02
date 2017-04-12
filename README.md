@@ -30,11 +30,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### `Simple Todo with react native and native module`
 <br><br>
-![run ss](http://prnt.sc/evlz05)
+![run ss](https://github.com/w4ndry/tryout-02/blob/master/images/1.png)
 <br>
-![speak](http://prnt.sc/evm0gv)
+![speak](https://github.com/w4ndry/tryout-02/blob/master/images/2.png)
 <br>
-(http://prnt.sc/evm0qb)
+![result](https://github.com/w4ndry/tryout-02/blob/master/images/3.png)<br>
 
 ### `Run program`
 <br>
