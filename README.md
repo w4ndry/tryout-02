@@ -30,14 +30,14 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### `Simple Todo with react native and native module`
 <br><br>
-http://prnt.sc/evlz05
+![run ss](http://prnt.sc/evlz05)
 <br>
-http://prnt.sc/evm0gv
+![speak](http://prnt.sc/evm0gv)
 <br>
-http://prnt.sc/evm0qb
+(http://prnt.sc/evm0qb)
 
 ### `Run program`
 <br>
 1. git clone https://github.com/w4ndry/tryout-02 <br>
-2. cd tryout-02/NativeModule/TodoApp/index.android.js
-3. react-native run-android && react-native start
+2. cd tryout-02/NativeModule/TodoApp/index.android.js <br>
+3. react-native run-android && react-native start<br>
